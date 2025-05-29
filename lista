@@ -21,3 +21,13 @@ proxima lista
 frutas = ['banana','pera','abacaxi']
 for indice, frutas in enumerate(frutas):
     print(f'indice:{indice},frutas: {frutas}')
+
+
+
+você pode ultilizar o start para comerçar do numero desejado
+planetas = ['jupyter', 'venus', 'terra', 'marte']
+for indice, planeta in enumerate(planetas, start = 2):
+     print(f'indice:{indice},planetas:{planeta}')
+
+
+
