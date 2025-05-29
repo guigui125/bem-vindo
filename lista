@@ -13,3 +13,11 @@ for indice, idade in enumerate(maiores):
 print('menor de idade')
 for indice, idade in enumerate(menores):
     print(indice, idade)
+
+
+
+
+proxima lista
+frutas = ['banana','pera','abacaxi']
+for indice, frutas in enumerate(frutas):
+    print(f'indice:{indice},frutas: {frutas}')
