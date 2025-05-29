@@ -1,0 +1,15 @@
+idades = [13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+menores = []
+maiores = []
+for indice, idade in enumerate(idades):
+    if idade < 18:
+        menores.append(idade)
+    else:
+        maiores.append(idade)
+print('maior de idade')
+for indice, idade in enumerate(maiores):
+    print(indice, idade)
+
+print('menor de idade')
+for indice, idade in enumerate(menores):
+    print(indice, idade)
