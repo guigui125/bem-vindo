@@ -1,0 +1,13 @@
+lista = {1,5,7,3,10,100}
+
+times_futebol ={'Sao Paulo', 'Botafogo', 'Palmeiras', 'Santos', 'Internacional' }
+
+sorted(times_futebol)ele ordena valores
+
+som(lista)soma todos os valores
+
+len(lista)numero de valores na lista 
+
+max(lista)retorna o maior valor
+
+min(lista)retorna o menor
