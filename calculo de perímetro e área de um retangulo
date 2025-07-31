@@ -1,0 +1,9 @@
+print ('please put the values of the rectangle')
+
+C = float(input('comprimento'))
+L = float(input('largura'))
+
+A = C * L
+print(A)
+P = (2*(C+L))
+print(P)
