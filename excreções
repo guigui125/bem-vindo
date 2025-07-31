@@ -1,0 +1,8 @@
+diferença !=
+2!=2falso
+2!=3true
+
+== serve para comparar valores 
+and todos os termos são verdadeiros 
+or se um dos termos for verdadeiro é true
+not troca os termos v fica f e f vira v 
