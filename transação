@@ -1,0 +1,13 @@
+transaçoes = [100, -50, 200, -100, 50]
+
+positivos = []
+for valor in transaçoes:
+    if valor > 0:
+        positivos.append(valor)
+negativos = []
+for valor in transaçoes:
+    if valor < 0:
+        negativos.append(valor)
+
+print("Depósitos:", positivos)
+print("Retiradas:", negativos)
