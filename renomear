@@ -1,0 +1,3 @@
+import ramdom as z
+print(z.randint(1,10))
+as serve para renomear 
