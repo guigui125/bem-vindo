@@ -1,0 +1,7 @@
+import numpy as np
+# Criar um array unidimensional
+original_array = np.array ([1, 2, 3, 4, 5, 6])
+print("Array original: \n", original_array)
+# Remodelar o array em uma matriz 2x3
+reshaped_array = original_array.reshape(2, 3)
+print("\nArray redimensionado: \n", reshaped_array)
