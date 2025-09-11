@@ -1,0 +1,2 @@
+import numpy as a
+a.size([[3, 1], [2,4]])
