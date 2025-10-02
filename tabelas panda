@@ -1,0 +1,16 @@
+import pandas as gui
+df = gui.read_csv("C:/Users/GuilhermeMaxwellNogu/Downloads/notas_CD.csv")
+df.head()
+
+
+df.info()
+• O método info() fornece detalhes sobre as colunas, tipos de dados e
+quantidade de valores não nulos.
+• Ele exibe informações como o nome das colunas, o número de entradas
+não nulas e os tipos de dados.
+df.shape()
+• A propriedade shape retorna uma tupla com o número de linhas e
+colunas do Data Frame.
+df.dtypes()
+• Atributo que mostra os tipos de dados de cada coluna.
+
