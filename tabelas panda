@@ -14,3 +14,25 @@ colunas do Data Frame.
 df.dtypes()
 • Atributo que mostra os tipos de dados de cada coluna.
 
+df.head()
+O método head() exibe as cinco primeiras linhas do
+Data Frame. Isso ajuda a ter uma ideia inicial dos
+dados.
+df.tail()
+Método tail() exibe as cinco últimas linhas do Data
+Frame.
+df.describe()
+O método describe() apresenta estatísticas
+resumidas para colunas numéricas. Ele inclui média,
+desvio padrão, mínimo, máximo e quartis.
+
+df.sort_values(by="Nome")
+Classificar o Data Frame com base na
+coluna “Nome”.
+df['Turma'].value_counts()
+Conta a quantidade de ocorrências de
+cada valor categórico na coluna “Turma”.
+df['Escola'].unique() 
+Retorna os valores únicos da coluna
+“Escola”.
+df['Escola'].nunique()
