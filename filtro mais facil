@@ -1,0 +1,13 @@
+df.loc[df["Quantidade"] >= 5]
+df[df["Quantidade"]>=5]
+
+
+na tabela 
+import pandas as pd
+data = {"Produto":["banguela","asa","capivara","vaca","cavalo","gato"],
+"Quantidade": [10, 5, 8, 12, 3,6],
+"Preço":[100,50,80,120,30,60]}
+df = pd.DataFrame(data)
+df
+df.loc[df["Quantidade"] >= 5]
+df[df["Quantidade"]>=5]
