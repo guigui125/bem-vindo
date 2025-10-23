@@ -1,0 +1,2 @@
+filtro = df.loc[(df['idade'] >=20 ) & (df['idade'] <=25)]
+filtro
