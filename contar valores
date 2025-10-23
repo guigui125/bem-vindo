@@ -1,0 +1,2 @@
+df['fruta'].value_counts()
+  
