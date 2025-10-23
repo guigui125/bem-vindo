@@ -1,0 +1,6 @@
+import pandas as pd 
+data= {'categoria': ['A','B','A', 'C', 'B', 'A']}
+df = pd.DataFrame(data)
+df
+df['categoria'].value_counts()
+pode tirar o df categoria 
