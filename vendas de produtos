@@ -1,0 +1,7 @@
+import pandas as pd
+data = {"Produto":["A","B","A","C","B","A"],
+"Quantidade": [10, 5, 8, 12, 3,6],
+"Preço":[100,50,80,120,30,60]}
+df = pd.DataFrame(data)
+df
+df.groupby('Quantidade').sum()
