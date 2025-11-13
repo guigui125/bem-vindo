@@ -1,0 +1,75 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+df = pd.read_csv("adcc_historical_data.csv")
+
+pontos_de_vitoria = df.groupby("winner_name")["winner_points"].sum().reset_index()
+pontos_de_vitoria = pontos_de_vitoria.sort_values("winner_points", ascending=True)
+
+top10 = pontos_de_vitoria.nlargest(10, "winner_points")
+top10 = top10.sort_values("winner_points", ascending=True)
+plt.figure(figsize=(10, 6))
+sns.barplot(data=top10, x="winner_points", y="winner_name", palette="viridis")
+plt.title("Top 10 Lutadores com Mais Pontos de Vitória no ADCC")
+plt.xlabel("Pontos de Vitória")
+plt.ylabel("Lutador")
+plt.show()
+
+
+
+  import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Carregar o arquivo CSV (ajuste o nome se necessário)
+df = pd.read_csv("adcc_historical_data.csv")
+
+# Calcular a média de pontos por lutador vencedor
+media_pontos = df.groupby("winner_name")["winner_points"].mean().reset_index()
+media_pontos.columns = ["Lutador", "Media_Pontos"]
+
+# Ordenar do maior para o menor e pegar o top 10
+top10_media = media_pontos.sort_values("Media_Pontos", ascending=False).head(10)
+
+# ===== 3️ Média de pontos por lutador =====
+plt.figure(figsize=(10, 6))
+ax = sns.barplot(data=top10_media, x="Media_Pontos", y="Lutador", palette="coolwarm")
+
+# Adicionar os valores nas barras
+for i, v in enumerate(top10_media["Media_Pontos"]):
+    ax.text(v + 0.1, i, f"{v:.2f}", color='black', va='center', fontweight='bold')
+
+plt.title("Média de Pontos por Luta (ADCC)")
+plt.xlabel("Média de Pontos")
+plt.ylabel("Lutador")
+plt.tight_layout()
+plt.show()
+
+
+  import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Carregar o arquivo CSV com separador correto
+df = pd.read_csv("adcc_historical_data.csv")
+
+# Somar os pontos totais por lutador vencedor
+pontos_totais = df.groupby("winner_name")["winner_points"].sum().reset_index()
+pontos_totais.columns = ["Lutador", "Pontos_Totais"]
+
+# Pegar os 10 com menor pontuação
+bottom10_pontos = pontos_totais.sort_values("Pontos_Totais", ascending=True).head(10)
+
+# ===== 5️ Lutadores com Menor Pontuação Total =====
+plt.figure(figsize=(10, 6))
+ax = sns.barplot(data=bottom10_pontos, x="Pontos_Totais", y="Lutador", palette="magma")
+
+# Adicionar os valores nas barras
+for i, v in enumerate(bottom10_pontos["Pontos_Totais"]):
+    ax.text(v + 0.1, i, f"{v:.2f}", color='white', va='center', fontweight='bold')
+
+plt.title("Lutadores com Menor Pontuação Total no ADCC")
+plt.xlabel("Pontuação Total")
+plt.ylabel("Lutador")
+plt.tight_layout()
+plt.show()
